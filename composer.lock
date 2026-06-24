@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "33a768b5cfced4c01db049d8eaec262f4e45284a"
+                "reference": "5d0943a315658d780cdde66074ff0f70f408261a"
             },
             "require": {
                 "ext-ctype": "*",
@@ -22,6 +22,7 @@
                 "league/flysystem": "^3.25",
                 "monolog/monolog": "^3.0",
                 "nyholm/psr7": "^1.8",
+                "nyholm/psr7-server": "^1.1",
                 "php": ">=8.4",
                 "psr/container": "^2.0",
                 "psr/event-dispatcher": "^1.0",
@@ -30,7 +31,8 @@
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0",
                 "psr/log": "^3.0",
-                "psr/simple-cache": "^3.0"
+                "psr/simple-cache": "^3.0",
+                "vlucas/phpdotenv": "^5.6"
             },
             "provide": {
                 "psr/container-implementation": "2.0",
@@ -49,6 +51,7 @@
                 "ext-pdo": "Required to use all database features.",
                 "ext-redis": "Required to use the Redis cache and session drivers.",
                 "league/flysystem": "Required for the filesystem abstraction layer (^3.25).",
+                "league/flysystem-aws-s3-v3": "Required to use the S3 compatible storage drivers (^3.0).",
                 "monolog/monolog": "Required for the default logging implementation (^3.0).",
                 "nikic/fast-route": "Required for the default routing implementation (^2.0).",
                 "symfony/console": "Required for the CLI application layer (^7.4 || ^8.0).",
