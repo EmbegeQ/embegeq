@@ -14,7 +14,10 @@ class AppServiceProvider implements ServiceProviderInterface
      */
     public function register(ContainerInterface $app): void
     {
-        //
+        $app->singleton(
+            \EmbegeQ\Nutrisi\Contracts\Http\KernelInterface::class,
+            \EmbegeQ\Nutrisi\Http\Kernel::class
+        );
     }
 
     /**

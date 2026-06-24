@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
 use EmbegeQ\Nutrisi\Foundation\Application;
 
 $app = new Application(dirname(__DIR__));

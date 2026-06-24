@@ -15,9 +15,11 @@ class RouteServiceProvider implements ServiceProviderInterface
      */
     public function register(ContainerInterface $app): void
     {
-        $app->singleton(Router::class, function (ContainerInterface $container) {
+        $app->singleton(\EmbegeQ\Nutrisi\Contracts\Routing\RouterInterface::class, function (ContainerInterface $container) {
             return new Router($container);
         });
+
+        $app->alias(\EmbegeQ\Nutrisi\Contracts\Routing\RouterInterface::class, Router::class);
     }
 
     /**
